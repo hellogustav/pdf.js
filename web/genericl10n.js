@@ -15,8 +15,8 @@
 
 /** @typedef {import("./interfaces").IL10n} IL10n */
 
-import { FluentBundle, FluentResource } from "fluent-bundle";
-import { DOMLocalization } from "fluent-dom";
+import { FluentBundle, FluentResource } from "@fluent/bundle";
+import { DOMLocalization } from "@fluent/dom";
 import { fetchData } from "pdfjs-lib";
 import { L10n } from "./l10n.js";
 
