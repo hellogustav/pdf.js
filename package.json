@@ -27,6 +27,7 @@
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-sort-exports": "^0.9.1",
     "eslint-plugin-unicorn": "^53.0.0",
+    "fluent-dom": "^0.5.0",
     "globals": "^15.3.0",
     "gulp": "^5.0.0",
     "gulp-cli": "^3.0.0",
@@ -62,9 +63,9 @@
     "yargs": "^17.7.2"
   },
   "scripts": {
-      "build-pdfjs": "npx gulp generic",
-      "postinstall": "cross-env PUPPETEER_PRODUCT=firefox node $(node -p \"require.resolve('puppeteer/install.mjs')\") && yarn build-pdfjs"
-    },
+    "build-pdfjs": "npx gulp generic",
+    "postinstall": "cross-env PUPPETEER_PRODUCT=firefox node $(node -p \"require.resolve('puppeteer/install.mjs')\") && yarn build-pdfjs"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/mozilla/pdf.js.git"
