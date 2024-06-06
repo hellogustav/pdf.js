@@ -15,4 +15,16 @@ module.exports = {
     publicPath: "../../build/webpack/",
     filename: "[name].bundle.js",
   },
+  resolve: {
+    alias: {
+      "fluent-bundle": path.resolve(
+        __dirname,
+        "../node_modules/@fluent/bundle/esm/index.js"
+      ),
+      "fluent-dom": path.resolve(
+        __dirname,
+        "../node_modules/@fluent/dom/esm/index.js"
+      ),
+    }
+  }
 };
