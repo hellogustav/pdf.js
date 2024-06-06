@@ -62,8 +62,9 @@
     "yargs": "^17.7.2"
   },
   "scripts": {
-    "postinstall": "cross-env PUPPETEER_PRODUCT=firefox node $(node -p \"require.resolve('puppeteer/install.mjs')\")"
-  },
+      "build-pdfjs": "npx gulp generic",
+      "postinstall": "cross-env PUPPETEER_PRODUCT=firefox node $(node -p \"require.resolve('puppeteer/install.mjs')\") && yarn build-pdfjs"
+    },
   "repository": {
     "type": "git",
     "url": "git://github.com/mozilla/pdf.js.git"
